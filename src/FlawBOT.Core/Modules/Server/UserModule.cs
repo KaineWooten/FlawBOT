@@ -2,8 +2,7 @@
 using DSharpPlus.CommandsNext;
 using DSharpPlus.CommandsNext.Attributes;
 using DSharpPlus.Entities;
-using FlawBOT.Framework.Models;
-using FlawBOT.Framework.Services;
+using FlawBOT.Common;
 using System;
 using System.Globalization;
 using System.Text;

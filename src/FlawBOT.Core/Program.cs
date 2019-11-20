@@ -7,8 +7,6 @@ using DSharpPlus.EventArgs;
 using DSharpPlus.Interactivity;
 using DSharpPlus.Interactivity.Enums;
 using FlawBOT.Common;
-using FlawBOT.Framework.Models;
-using FlawBOT.Framework.Services;
 using FlawBOT.Modules;
 using System;
 using System.IO;
@@ -80,26 +78,9 @@ namespace FlawBOT
             Commands.SetHelpFormatter<HelpFormatter>();
             Commands.RegisterCommands<BotModule>();
             Commands.RegisterCommands<OwnerModule>();
-            Commands.RegisterCommands<PokemonModule>();
-            Commands.RegisterCommands<SpeedrunModule>();
-            Commands.RegisterCommands<SmashModule>();
-            Commands.RegisterCommands<TeamFortressModule>();
             Commands.RegisterCommands<MathModule>();
             Commands.RegisterCommands<MiscModule>();
             Commands.RegisterCommands<PollModule>();
-            Commands.RegisterCommands<AmiiboModule>();
-            Commands.RegisterCommands<DictionaryModule>();
-            Commands.RegisterCommands<GoodReadsModule>();
-            Commands.RegisterCommands<GoogleModule>();
-            Commands.RegisterCommands<ImgurModule>();
-            Commands.RegisterCommands<NASAModule>();
-            Commands.RegisterCommands<OMDBModule>();
-            Commands.RegisterCommands<RedditModule>();
-            Commands.RegisterCommands<SimpsonsModule>();
-            Commands.RegisterCommands<SteamModule>();
-            Commands.RegisterCommands<TwitchModule>();
-            Commands.RegisterCommands<WikipediaModule>();
-            Commands.RegisterCommands<YouTubeModule>();
             Commands.RegisterCommands<ChannelModule>();
             Commands.RegisterCommands<EmojiModule>();
             Commands.RegisterCommands<RoleModule>();
@@ -109,9 +90,6 @@ namespace FlawBOT
             // Start the uptime counter
             Console.Title = SharedData.Name + " (" + SharedData.Version + ")";
             SharedData.ProcessStarted = DateTime.Now;
-            await SteamService.UpdateSteamListAsync().ConfigureAwait(false);
-            await TeamFortressService.LoadTF2SchemaAsync().ConfigureAwait(false);
-            await PokemonService.UpdatePokemonListAsync().ConfigureAwait(false);
             await Client.ConnectAsync(); // Connect and log into Discord
             await Task.Delay(-1).ConfigureAwait(false); // Prevent the console window from closing
         }

@@ -61,15 +61,6 @@ namespace FlawBOT.Core.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to :8ball: The almighty 8 ball requests a question..
-        /// </summary>
-        internal static string ERR_8BALL_QUESTION {
-            get {
-                return ResourceManager.GetString("ERR_8BALL_QUESTION", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Channel with the same name already exists..
         /// </summary>
         internal static string ERR_CHANNEL_EXISTS {
@@ -160,15 +151,6 @@ namespace FlawBOT.Core.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Unable to reach the NASA API..
-        /// </summary>
-        internal static string ERR_NASA_API {
-            get {
-                return ResourceManager.GetString("ERR_NASA_API", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Invalid number of minutes, try **.poll 3 Should I order pizza tonight?**.
         /// </summary>
         internal static string ERR_POLL_MINUTES {
@@ -232,15 +214,6 @@ namespace FlawBOT.Core.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Invalid connection info, follow the format: 123.345.56.789:000; password hello.
-        /// </summary>
-        internal static string ERR_STEAM_CONNECT_FORMAT {
-            get {
-                return ResourceManager.GetString("ERR_STEAM_CONNECT_FORMAT", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Emoji not found in the server list..
         /// </summary>
         internal static string NOT_FOUND_EMOJI {
@@ -259,74 +232,11 @@ namespace FlawBOT.Core.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Location not found!.
-        /// </summary>
-        internal static string NOT_FOUND_LOCATION {
-            get {
-                return ResourceManager.GetString("NOT_FOUND_LOCATION", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Reddit post not found!.
-        /// </summary>
-        internal static string NOT_FOUND_REDDIT {
-            get {
-                return ResourceManager.GetString("NOT_FOUND_REDDIT", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Smash character not found or not yet available! See the available characters here: http://kuroganehammer.com/Ultimate.
-        /// </summary>
-        internal static string NOT_FOUND_SMASH {
-            get {
-                return ResourceManager.GetString("NOT_FOUND_SMASH", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Subreddit not found!.
-        /// </summary>
-        internal static string NOT_FOUND_SUBREDDIT {
-            get {
-                return ResourceManager.GetString("NOT_FOUND_SUBREDDIT", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Twitch channel not found or it&apos;s offline..
-        /// </summary>
-        internal static string NOT_FOUND_TWITCH {
-            get {
-                return ResourceManager.GetString("NOT_FOUND_TWITCH", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Wikipedia page not found..
-        /// </summary>
-        internal static string NOT_FOUND_WIKIPEDIA {
-            get {
-                return ResourceManager.GetString("NOT_FOUND_WIKIPEDIA", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Request timed out....
         /// </summary>
         internal static string REQUEST_TIMEOUT {
             get {
                 return ResourceManager.GetString("REQUEST_TIMEOUT", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Note: First time gifs take a few minutes to properly generate..
-        /// </summary>
-        internal static string SIMPSONS_GIF_WARNING {
-            get {
-                return ResourceManager.GetString("SIMPSONS_GIF_WARNING", resourceCulture);
             }
         }
     }

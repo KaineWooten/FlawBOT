@@ -18,13 +18,12 @@ namespace FlawBOT.Common
         public HelpFormatter(CommandContext cnext) : base(cnext)
         {
             output = new DiscordEmbedBuilder()
-                .WithColor(DiscordColor.Turquoise)
-                .WithUrl(SharedData.GitHubLink + "wiki");
+                .WithColor(DiscordColor.Turquoise);
         }
 
         public override CommandHelpMessage Build()
         {
-            string desc = $"Listing all commands and groups. Use {Formatter.InlineCode(".help <command>")} for detailed information.";
+            string desc = $"Listing all commands and groups. Use {Formatter.InlineCode("bruno help <command>")} for detailed information.";
             if (!string.IsNullOrWhiteSpace(name))
             {
                 output.WithTitle(name);

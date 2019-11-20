@@ -11,16 +11,13 @@
     <LangVersion>7.2</LangVersion>
     <AssemblyVersion>2.4.0.0</AssemblyVersion>
     <FileVersion>2.4.0.0</FileVersion>
-    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <AssemblyName>FlawBOT.Core</AssemblyName>
     <RootNamespace>FlawBOT.Core</RootNamespace>
     <PackageTags />
     <Description>Multipurpose Discord bot written in C# using DSharpPlus. Application Core.</Description>
-    <PackageProjectUrl>https://discordbots.org/bot/339833029013012483</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/CriticalFlaw/FlawBOT</RepositoryUrl>
     <RepositoryType />
     <Company>CriticalFlaw</Company>
-    <Product>FlawBOT</Product>
+    <Product>BrunoBOT</Product>
     <Authors>CriticalFlaw</Authors>
     <NeutralLanguage>en-CA</NeutralLanguage>
   </PropertyGroup>
@@ -41,19 +38,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="DSharpPlus" Version="4.0.0-nightly-00625" />
-    <PackageReference Include="DSharpPlus.CommandsNext" Version="4.0.0-nightly-00625" />
-    <PackageReference Include="DSharpPlus.Interactivity" Version="4.0.0-nightly-00625" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\FlawBOT.Framework\FlawBOT.Framework.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="PokemonTcgSdk">
-      <HintPath>..\FlawBOT.Framework\Resources\PokemonTcgSdk.dll</HintPath>
-    </Reference>
+    <PackageReference Include="DSharpPlus" Version="4.0.0-nightly-00635" />
+    <PackageReference Include="DSharpPlus.CommandsNext" Version="4.0.0-nightly-00635" />
+    <PackageReference Include="DSharpPlus.Interactivity" Version="4.0.0-nightly-00635" />
   </ItemGroup>
 
   <ItemGroup>

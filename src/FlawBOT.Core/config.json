@@ -1,14 +1,4 @@
 {
   "prefix": ".",
-  "discord": null,
-  "google": null,
-  "steam": null,
-  "imgur": null,
-  "omdb": null,
-  "twitch": null,
-  "nasa": null,
-  "teamworktf": null,
-  "tradetf": null,
-  "news": null,
-  "goodreads": null
+  "discord": null
 }

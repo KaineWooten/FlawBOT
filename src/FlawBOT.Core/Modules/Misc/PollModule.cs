@@ -2,9 +2,8 @@
 using DSharpPlus.CommandsNext.Attributes;
 using DSharpPlus.Entities;
 using DSharpPlus.Interactivity;
+using FlawBOT.Common;
 using FlawBOT.Core.Properties;
-using FlawBOT.Framework.Models;
-using FlawBOT.Framework.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;

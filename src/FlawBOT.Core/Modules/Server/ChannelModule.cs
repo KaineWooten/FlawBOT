@@ -6,8 +6,6 @@ using DSharpPlus.Interactivity;
 using DSharpPlus.Net.Models;
 using FlawBOT.Common;
 using FlawBOT.Core.Properties;
-using FlawBOT.Framework.Models;
-using FlawBOT.Framework.Services;
 using System;
 using System.Globalization;
 using System.Linq;

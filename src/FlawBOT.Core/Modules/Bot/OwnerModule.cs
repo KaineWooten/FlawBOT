@@ -3,8 +3,6 @@ using DSharpPlus.CommandsNext;
 using DSharpPlus.CommandsNext.Attributes;
 using DSharpPlus.Entities;
 using FlawBOT.Common;
-using FlawBOT.Framework.Models;
-using FlawBOT.Framework.Services;
 using System.Threading.Tasks;
 
 namespace FlawBOT.Modules
@@ -98,23 +96,6 @@ namespace FlawBOT.Modules
         }
 
         #endregion COMMAND_STATUS
-
-        #region COMMAND_UPDATE
-
-        [RequireOwner]
-        [Command("update"), Hidden]
-        [Aliases("refresh")]
-        [Description("Update FlawBOT libraries")]
-        public async Task Update(CommandContext ctx)
-        {
-            var message = await ctx.RespondAsync("Starting update...");
-            await SteamService.UpdateSteamListAsync().ConfigureAwait(false);
-            await TeamFortressService.LoadTF2SchemaAsync().ConfigureAwait(false);
-            await PokemonService.UpdatePokemonListAsync().ConfigureAwait(false);
-            await message.ModifyAsync("Starting update...done!");
-        }
-
-        #endregion COMMAND_UPDATE
 
         #region COMMAND_USERNAME
 
