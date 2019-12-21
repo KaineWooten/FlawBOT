@@ -70,6 +70,19 @@ namespace FlawBOT.Modules
         }
 
         #endregion COMMAND_PING
+        
+        #region COMMAND_PURGE
+
+        [Command("purge")]
+        [Description("Purges chat messages")]
+        [RequireUserPermissions(DSharpPlus.Permissions.ManageMessages)]
+        public async Task Purge(CommandContext ctx, int amount)
+        {
+            await ctx.Message.DeleteAsync();
+            await ctx.Channel.DeleteMessagesAsync(await ctx.Channel.GetMessagesAsync(amount));
+        }
+
+        #endregion COMMAND_PURGE
 
         #region COMMAND_REPORT
 
