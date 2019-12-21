@@ -150,6 +150,22 @@ namespace FlawBOT.Modules
 
         #endregion CHANNEL_PURGE
 
+        #region CHANNEL_PURGE
+
+        [Command("purge")]
+        [Description("Remove server user's channel messages")]
+        [RequirePermissions(Permissions.ManageMessages)]
+        public async Task Purge(CommandContext ctx,
+            [Description("Server user whose messages will be purged")] DiscordMember member,
+            [Description("Number of messages to purge")] [RemainingText] int limit = 0)
+        {
+            var messages = await ctx.Channel.GetMessagesAsync(BotServices.LimitToRange(limit)).ConfigureAwait(false);
+            await ctx.Channel.DeleteMessagesAsync(messages.Where(m => m.Author.Id == member.Id));
+            await BotServices.SendEmbedAsync(ctx, $"Purged **{limit}** messages by {member.Username}#{member.Discriminator} (ID:{member.Id})", EmbedType.Good);
+        }
+
+        #endregion CHANNEL_PURGE
+
         #region COMMAND_RENAME
 
         [Command("rename")]
